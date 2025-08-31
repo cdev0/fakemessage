@@ -2,8 +2,45 @@
 <html>
     <head>
         <title>Funny website</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <h1>message</h1>
+        <button class="showPopup lg">Show Popup</button>
+        <div class="phone">
+            <span id="phoneTime" class="phone-time">09:41</span>
+            <div id="dynamicIsland" style="display:none;"></div>
+        </div>
+        <div class="popup lg" style="display:none;">
+            <label>
+                Mode:
+                <select id="modePicker">
+                    <option value="dark">Dark</option>
+                    <option value="light">Light</option>
+                </select>
+            </label>
+            <br><br>
+            <label>
+                Background Color:
+                <input type="color" id="bgColorPicker">
+            </label>
+            <br><br>
+            <label>
+                Select Image:
+                <input type="file" id="bgImagePicker" accept="image/*">
+            </label>
+            <br><br>
+            <label>
+                <input type="checkbox" id="dynamicIslandToggle">
+                Show Dynamic Island
+            </label>
+            <br><br>
+            <label>
+                Set Time:
+                <input type="time" id="timePicker">
+            </label>
+            <br><br>
+            <button id="closePopup">Close</button>
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
